@@ -58,10 +58,16 @@ nav a:hover { opacity:.58; }
 .contact .section-index { color:var(--acid); }
 .contact h2 { font-size:clamp(52px,7vw,96px); }
 .contact > p:not(.section-index) { color:#b6bfb9; max-width:620px; margin:32px auto; line-height:1.7; font-size:18px; }
+.contact-grid { max-width:980px; margin:46px auto 28px; display:grid; grid-template-columns:1.35fr 1fr .7fr; border:1px solid #46524b; text-align:left; }
+.contact-grid > * { min-width:0; padding:24px; border-right:1px solid #46524b; transition:background .2s; }
+.contact-grid > *:last-child { border-right:0; }
+.contact-grid a:hover { background:#243129; }
+.contact-grid span { display:block; color:var(--acid); font:700 10px var(--font-geist-mono),monospace; letter-spacing:.13em; text-transform:uppercase; margin-bottom:12px; }
+.contact-grid strong { display:block; color:white; font-size:14px; line-height:1.45; overflow-wrap:anywhere; }
 .button.light { background:var(--acid); color:var(--ink); margin-top:12px; }
 footer { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:30px 6vw; background:var(--ink); color:#aeb8b1; border-top:1px solid #35423a; font-size:11px; }
 footer .brand { color:white; }
 footer a:last-child { color:white; font-weight:700; }
-@media(max-width:850px){ nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:60px}.status-card{max-width:440px}.about,.skills{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr}.project-card{grid-template-columns:50px 1fr}.outcome{grid-column:2}.hero h1{font-size:clamp(48px,13vw,78px)} }
+@media(max-width:850px){ nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:60px}.status-card{max-width:440px}.about,.skills{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr}.project-card{grid-template-columns:50px 1fr}.outcome{grid-column:2}.hero h1{font-size:clamp(48px,13vw,78px)}.contact-grid{grid-template-columns:1fr}.contact-grid > *{border-right:0;border-bottom:1px solid #46524b}.contact-grid > *:last-child{border-bottom:0} }
 @media(max-width:520px){ .site-header{height:72px}.hero,.section{padding-left:6vw;padding-right:6vw}.hero-actions{align-items:flex-start;flex-direction:column}.status-card{min-height:350px}.project-card{grid-template-columns:1fr}.project-number,.outcome{grid-column:1}.capability-grid{grid-template-columns:1fr}.capability-grid div:nth-child(odd){border-right:0}.capability-grid div:nth-child(even){padding-left:0}footer{align-items:flex-start;flex-direction:column} }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-card{transition:none}}

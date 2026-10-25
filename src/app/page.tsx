@@ -52,7 +52,7 @@ export default function Home() {
             <article className="project-card" key={project.number}>
               <span className="project-number">{project.number}</span>
               <div className="project-body"><h3>{project.title}</h3><p>{project.summary}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
-              <p className="outcome"><strong>OUTCOME</strong>{project.outcome}</p>
+              <p className="outcome"><strong>BUSINESS VALUE</strong>{project.outcome}</p>
             </article>
           ))}
         </div>
@@ -65,11 +65,16 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <p className="section-index">04 / CONTACT</p><h2>Let&apos;s make technology<br /><em>work better.</em></h2>
-        <p>I&apos;m interested in connecting with people working on thoughtful IT operations, support, and security.</p>
-        <a className="button light" href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection">Start a conversation <span>↗</span></a>
+        <p>I bring a service-first mindset, practical technical skills, clear communication, and careful documentation to every problem. I&apos;m open to conversations with employers, recruiters, and technology teams looking for someone who can strengthen support, systems, and security.</p>
+        <div className="contact-grid" aria-label="Joshua Thompson contact information">
+          <a href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection"><span>Email</span><strong>Joshuathompson.pro@gmail.com</strong></a>
+          <a href="https://www.linkedin.com/in/joshuat3/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/joshuat3/ ↗</strong></a>
+          <div><span>Location</span><strong>Greenville, SC</strong></div>
+        </div>
+        <a className="button light" href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection">Contact Joshua <span>↗</span></a>
       </section>
 
-      <footer><a className="brand" href="#top">J<span>.</span></a><p>Designed and built with care. No confidential employer information included.</p><a href="#top">Back to top ↑</a></footer>
+      <footer><a className="brand" href="#top">J<span>.</span></a><p>Joshua Thompson · Greenville, SC · No confidential employer information included.</p><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
