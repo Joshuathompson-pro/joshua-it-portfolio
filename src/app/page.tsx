@@ -66,7 +66,7 @@ export default function Home() {
       <section className="contact" id="contact">
         <p className="section-index">04 / CONTACT</p><h2>Let&apos;s make technology<br /><em>work better.</em></h2>
         <p>I&apos;m interested in connecting with people working on thoughtful IT operations, support, and security.</p>
-        <a className="button light" href="mailto:?subject=IT%20portfolio%20connection">Start a conversation <span>↗</span></a>
+        <a className="button light" href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection">Start a conversation <span>↗</span></a>
       </section>
 
       <footer><a className="brand" href="#top">J<span>.</span></a><p>Designed and built with care. No confidential employer information included.</p><a href="#top">Back to top ↑</a></footer>
