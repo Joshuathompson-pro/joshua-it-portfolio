@@ -12,7 +12,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Joshua home">J<span>.</span></a>
         <nav aria-label="Primary navigation">
-          <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a className="nav-cta" href="#contact">Contact</a>
+          <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a className="nav-cta" href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -63,8 +63,26 @@ export default function Home() {
         <div className="capability-grid">{capabilities.map((capability, index) => <div key={capability}><span>0{index + 1}</span>{capability}</div>)}</div>
       </section>
 
+      <section className="section certifications" id="certifications">
+        <div className="section-heading certification-heading">
+          <p className="section-index">04 / CERTIFICATIONS</p>
+          <h2>Knowledge backed<br />by credentials.</h2>
+          <p>Industry-recognized learning across technical support, troubleshooting, networking, security, and operational fundamentals.</p>
+        </div>
+        <div className="certification-grid">
+          <article className="certification-card">
+            <div className="vendor-logo google-logo" aria-label="Google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+            <div><p>Professional Certificate</p><h3>Google IT Support</h3><span>Technical support · Systems administration · Troubleshooting</span></div>
+          </article>
+          <article className="certification-card">
+            <div className="vendor-logo comptia-logo" aria-label="CompTIA">CompTIA<span>+</span></div>
+            <div><p>Professional Certification</p><h3>CompTIA Network+</h3><span>Networking concepts · Operations · Security · Troubleshooting</span></div>
+          </article>
+        </div>
+      </section>
+
       <section className="contact" id="contact">
-        <p className="section-index">04 / CONTACT</p><h2>Let&apos;s make technology<br /><em>work better.</em></h2>
+        <p className="section-index">05 / CONTACT</p><h2>Let&apos;s make technology<br /><em>work better.</em></h2>
         <p>I bring a service-first mindset, practical technical skills, clear communication, and careful documentation to every problem. I&apos;m open to conversations with employers, recruiters, and technology teams looking for someone who can strengthen support, systems, and security.</p>
         <div className="contact-grid" aria-label="Joshua Thompson contact information">
           <a href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection"><span>Email</span><strong>Joshuathompson.pro@gmail.com</strong></a>

@@ -54,6 +54,18 @@ nav a:hover { opacity:.58; }
 .capability-grid div:nth-child(odd) { border-right:1px solid var(--line); }
 .capability-grid div:nth-child(even) { padding-left:22px; }
 .capability-grid span { display:block; color:#8d968e; font:700 10px var(--font-geist-mono),monospace; margin-bottom:18px; }
+.certifications { background:var(--acid); }
+.certification-heading { margin-bottom:48px; }
+.certification-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.certification-card { min-height:245px; background:var(--paper); border:1px solid rgba(23,33,28,.2); padding:30px; display:grid; grid-template-rows:68px 1fr; transition:transform .2s,box-shadow .2s; }
+.certification-card:hover { transform:translateY(-4px); box-shadow:8px 8px 0 var(--ink); }
+.vendor-logo { display:flex; align-items:center; width:max-content; font-size:27px; line-height:1; font-weight:800; letter-spacing:-1.5px; }
+.google-logo span:nth-child(1),.google-logo span:nth-child(4){color:#4285f4}.google-logo span:nth-child(2),.google-logo span:nth-child(6){color:#ea4335}.google-logo span:nth-child(3){color:#fbbc05}.google-logo span:nth-child(5){color:#34a853}
+.comptia-logo { color:#e31b23; letter-spacing:-2.2px; font-weight:900; text-transform:uppercase; }
+.comptia-logo span { margin-left:1px; }
+.certification-card p { color:var(--muted); font:700 10px var(--font-geist-mono),monospace; letter-spacing:.12em; text-transform:uppercase; margin:0 0 10px; }
+.certification-card h3 { font-size:30px; letter-spacing:-.035em; margin:0 0 16px; }
+.certification-card div > span { color:var(--muted); font-size:13px; line-height:1.6; }
 .contact { background:var(--ink); color:white; text-align:center; padding:110px 8vw; }
 .contact .section-index { color:var(--acid); }
 .contact h2 { font-size:clamp(52px,7vw,96px); }
@@ -68,6 +80,6 @@ nav a:hover { opacity:.58; }
 footer { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:30px 6vw; background:var(--ink); color:#aeb8b1; border-top:1px solid #35423a; font-size:11px; }
 footer .brand { color:white; }
 footer a:last-child { color:white; font-weight:700; }
-@media(max-width:850px){ nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:60px}.status-card{max-width:440px}.about,.skills{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr}.project-card{grid-template-columns:50px 1fr}.outcome{grid-column:2}.hero h1{font-size:clamp(48px,13vw,78px)}.contact-grid{grid-template-columns:1fr}.contact-grid > *{border-right:0;border-bottom:1px solid #46524b}.contact-grid > *:last-child{border-bottom:0} }
+@media(max-width:850px){ nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:60px}.status-card{max-width:440px}.about,.skills{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr}.project-card{grid-template-columns:50px 1fr}.outcome{grid-column:2}.hero h1{font-size:clamp(48px,13vw,78px)}.certification-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.contact-grid > *{border-right:0;border-bottom:1px solid #46524b}.contact-grid > *:last-child{border-bottom:0} }
 @media(max-width:520px){ .site-header{height:72px}.hero,.section{padding-left:6vw;padding-right:6vw}.hero-actions{align-items:flex-start;flex-direction:column}.status-card{min-height:350px}.project-card{grid-template-columns:1fr}.project-number,.outcome{grid-column:1}.capability-grid{grid-template-columns:1fr}.capability-grid div:nth-child(odd){border-right:0}.capability-grid div:nth-child(even){padding-left:0}footer{align-items:flex-start;flex-direction:column} }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-card{transition:none}}
