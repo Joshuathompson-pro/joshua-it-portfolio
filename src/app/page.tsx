@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><a className="brand" href="#top">J<span>.</span></a><p>Joshua Thompson · Greenville, SC · No confidential employer information included.</p><a href="#top">Back to top ↑</a></footer>
+      <footer><a className="brand" href="#top">J<span>.</span></a><p>Joshua Thompson · Greenville, SC</p><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
