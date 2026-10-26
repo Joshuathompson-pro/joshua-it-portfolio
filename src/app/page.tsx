@@ -3,7 +3,7 @@ import ResumeRequest from "./ResumeRequest";
 
 const projects = [
   { number: "01", title: "Secure Home Lab", summary: "A segmented practice environment for testing Windows administration, identity, patching, and recovery workflows without exposing real business systems.", tags: ["Windows", "Networking", "Security"], outcome: "Documented repeatable build, backup, and restore procedures." },
-  { number: "02", title: "IT Automation Toolkit", summary: "A collection of safe, reusable scripts for workstation inventory, health checks, log collection, and routine support tasks.", tags: ["PowerShell", "Automation", "Support"], outcome: "Reduced repetitive checks and produced clearer troubleshooting notes." },
+  { number: "02", title: "PowerShell Server Health Monitoring", summary: "A documented monitoring workflow that checks Windows server availability, resource utilization, uptime, and critical services using configurable thresholds and safe synthetic data.", tags: ["PowerShell", "Monitoring", "Automation"], outcome: "Demonstrates proactive incident prevention, repeatable health checks, structured reporting, and privacy-conscious documentation.", github: "https://github.com/Joshuathompson-pro/powershell-server-health-monitoring" },
   { number: "03", title: "Network Monitoring Lab", summary: "A small observability stack built to explore availability checks, alert design, baseline performance, and incident triage.", tags: ["Monitoring", "Linux", "Networking"], outcome: "Created actionable alerts and a simple incident-response runbook." },
 ];
 
@@ -82,7 +82,7 @@ export default function Home() {
           {projects.map((project) => (
             <article className="project-card" key={project.number}>
               <span className="project-number">{project.number}</span>
-              <div className="project-body"><h3>{project.title}</h3><p>{project.summary}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
+              <div className="project-body"><h3>{project.title}</h3><p>{project.summary}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>{project.github && <a className="project-link" href={project.github} target="_blank" rel="noreferrer">View project on GitHub ↗</a>}</div>
               <p className="outcome"><strong>BUSINESS VALUE</strong>{project.outcome}</p>
             </article>
           ))}
