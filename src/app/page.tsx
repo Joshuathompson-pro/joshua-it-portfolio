@@ -1,3 +1,5 @@
+import ResumeRequest from "./ResumeRequest";
+
 const projects = [
   { number: "01", title: "Secure Home Lab", summary: "A segmented practice environment for testing Windows administration, identity, patching, and recovery workflows without exposing real business systems.", tags: ["Windows", "Networking", "Security"], outcome: "Documented repeatable build, backup, and restore procedures." },
   { number: "02", title: "IT Automation Toolkit", summary: "A collection of safe, reusable scripts for workstation inventory, health checks, log collection, and routine support tasks.", tags: ["PowerShell", "Automation", "Support"], outcome: "Reduced repetitive checks and produced clearer troubleshooting notes." },
@@ -23,7 +25,7 @@ export default function Home() {
           <p className="hero-lede">I&apos;m Joshua, an IT professional focused on dependable systems, practical security, and support experiences that make technology easier for people to use.</p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">Explore my work <span>↘</span></a>
-            <a className="text-link" href="#about">More about me <span>→</span></a>
+            <ResumeRequest />
           </div>
         </div>
         <aside className="status-card" aria-label="Professional focus">
@@ -89,7 +91,10 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/joshuat3/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/joshuat3/ ↗</strong></a>
           <div><span>Location</span><strong>Greenville, SC</strong></div>
         </div>
-        <a className="button light" href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection">Contact Joshua <span>↗</span></a>
+        <div className="contact-actions">
+          <a className="button light" href="mailto:Joshuathompson.pro@gmail.com?subject=IT%20portfolio%20connection">Contact Joshua <span>↗</span></a>
+          <ResumeRequest variant="light" />
+        </div>
       </section>
 
       <footer><a className="brand" href="#top">J<span>.</span></a><p>Joshua Thompson · Greenville, SC · No confidential employer information included.</p><a href="#top">Back to top ↑</a></footer>
