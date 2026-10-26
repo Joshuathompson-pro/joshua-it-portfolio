@@ -8,11 +8,11 @@ export default function ResumeRequest({ variant = "text" }: { variant?: "text" |
   function submitRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(`Résumé request from ${data.get("name")}`);
+    const subject = encodeURIComponent(`Resume request from ${data.get("name")}`);
     const body = encodeURIComponent([
       "Hello Joshua,",
       "",
-      "I would like to request a copy of your résumé.",
+      "I would like to request a copy of your resume.",
       "",
       `Name: ${data.get("name")}`,
       `Email: ${data.get("email")}`,
@@ -30,14 +30,14 @@ export default function ResumeRequest({ variant = "text" }: { variant?: "text" |
   return (
     <>
       <button className={variant === "light" ? "button light resume-button" : "text-link resume-button"} type="button" onClick={() => dialogRef.current?.showModal()}>
-        Request résumé <span>→</span>
+        Request resume <span>→</span>
       </button>
       <dialog className="resume-dialog" ref={dialogRef} aria-labelledby="resume-dialog-title">
         <div className="dialog-top">
           <p>RECRUITER REQUEST</p>
-          <button type="button" aria-label="Close résumé request form" onClick={() => dialogRef.current?.close()}>×</button>
+          <button type="button" aria-label="Close resume request form" onClick={() => dialogRef.current?.close()}>×</button>
         </div>
-        <h2 id="resume-dialog-title">Request Joshua&apos;s résumé.</h2>
+        <h2 id="resume-dialog-title">Request Joshua&apos;s resume.</h2>
         <p className="dialog-intro">Tell me who you are and why you&apos;d like a copy. Submitting opens your email app with the request ready to send.</p>
         <form onSubmit={submitRequest}>
           <div className="field-pair">
